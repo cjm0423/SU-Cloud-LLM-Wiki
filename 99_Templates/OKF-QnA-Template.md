@@ -5,7 +5,8 @@ date: YYYY-MM-DD
 tags: ["#openstack", "#troubleshooting"]
 related_nodes: ["[[연관 개념 문서]]", "[[이전 트러블슈팅 문서]]"]
 author: "AI Assistant & [작성자 이름]"
-status: "resolved"
+status: "open"
+# status 값: open (미해결) | resolved (해결됨) | wontfix (해결 안 함)
 raw_source: "[[00_Inbox/원본 파일명]]"
 ---
 

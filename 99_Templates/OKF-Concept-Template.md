@@ -3,8 +3,10 @@ title: "[개념 이름]"
 type: "concept"
 date: YYYY-MM-DD
 tags: ["#openstack", "#networking"]
+status: "draft"
 related_nodes: ["[[연관 개념]]", "[[관련 QnA]]"]
 author: "[작성자]"
+raw_source: ""
 ---
 
 # [개념 이름]
