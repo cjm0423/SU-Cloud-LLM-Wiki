@@ -1,0 +1,20 @@
+﻿---
+title: "사전학습 인덱스"
+type: "raw"
+date: 2026-05-11
+tags: ["#raw", "#inbox"]
+status: "raw"
+source: "notion-export"
+promoted_to: ""
+---
+# 사전학습
+
+[🗓️ OpenStack 4주 사전학습 로드맵 및 액션 플랜](%EC%82%AC%EC%A0%84%ED%95%99%EC%8A%B5/%F0%9F%97%93%EF%B8%8F%20OpenStack%204%EC%A3%BC%20%EC%82%AC%EC%A0%84%ED%95%99%EC%8A%B5%20%EB%A1%9C%EB%93%9C%EB%A7%B5%20%EB%B0%8F%20%EC%95%A1%EC%85%98%20%ED%94%8C%EB%9E%9C%2035dd8e51100c80f58a27d4327d35db05.md)
+
+[제출 템플릿](%EC%82%AC%EC%A0%84%ED%95%99%EC%8A%B5/%EC%A0%9C%EC%B6%9C%20%ED%85%9C%ED%94%8C%EB%A6%BF%2035dd8e51100c809697d3ea30ebbe2d0d.md)
+
+[1주차(05/11 ~ 05/17)](%EC%82%AC%EC%A0%84%ED%95%99%EC%8A%B5/1%EC%A3%BC%EC%B0%A8(05%2011%20~%2005%2017)%2035dd8e51100c808f8b94cc5ce2a1010f.md)
+
+[2주차(DevStack 환경 구성)](%EC%82%AC%EC%A0%84%ED%95%99%EC%8A%B5/2%EC%A3%BC%EC%B0%A8(DevStack%20%ED%99%98%EA%B2%BD%20%EA%B5%AC%EC%84%B1)%20361d8e51100c8017b50ce21615b41472.md)
+
+[3주차(쇼핑 파이프라인 - 데이터 분석 course)](%EC%82%AC%EC%A0%84%ED%95%99%EC%8A%B5/3%EC%A3%BC%EC%B0%A8(%EC%87%BC%ED%95%91%20%ED%8C%8C%EC%9D%B4%ED%94%84%EB%9D%BC%EC%9D%B8%20-%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EC%84%9D%20course)%2036ed8e51100c80ff97bac16055c4a9d7.md)
