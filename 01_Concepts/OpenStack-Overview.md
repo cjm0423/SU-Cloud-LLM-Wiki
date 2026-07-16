@@ -3,8 +3,8 @@ title: "OpenStack 전체 구조 개요"
 type: "concept"
 date: 2026-06-18
 tags: ["#openstack", "#architecture", "#cloud-engineering"]
-status: "review"
-related_nodes: ["[[Provider-vs-SelfService-Network]]", "[[Neutron]]", "[[DevStack]]", "[[SU Cloud 프로젝트 개요]]"]
+status: "stable"
+related_nodes: ["[[Provider-vs-SelfService-Network]]", "[[Neutron]]", "[[03_Guides/DevStack-Installation-Guide]]", "[[01_Concepts/SU-Cloud-Project-Overview]]"]
 author: "SU-Cloud Team"
 ---
 
@@ -63,6 +63,6 @@ Horizon
 
 - [[Provider-vs-SelfService-Network]] — 네트워크 유형 이해 필수
 - [[Neutron]] — 가상 네트워크 상세
-- [[DevStack]] — 로컬 실습 환경
+- [[03_Guides/DevStack-Installation-Guide]] — 로컬 실습 환경
 - [[Proxmox]] — SU Cloud 실습 하이퍼바이저 계층
 - [[VXLAN]] — Compute Node 간 VM 트래픽 터널링

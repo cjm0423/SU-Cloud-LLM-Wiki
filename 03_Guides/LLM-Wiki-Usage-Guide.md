@@ -3,6 +3,7 @@ title: "SU-Cloud-LLM-Wiki 사용가이드"
 type: "guide"
 date: 2026-07-12
 tags: ["#guide", "#wiki", "#obsidian"]
+status: "stable"
 related_nodes: ["[[01_Concepts/LLM-Wiki-Concept]]"]
 author: "AI Assistant"
 raw_source: "[[00_Inbox/2026-07-12-wiki-usage-guide-raw]]"

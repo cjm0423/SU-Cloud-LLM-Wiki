@@ -3,8 +3,8 @@ title: "DevStack 설치 가이드 (Ubuntu 22.04 + Antelope 2023.1)"
 type: "guide"
 date: 2026-06-18
 tags: ["#devstack", "#openstack", "#installation", "#antelope"]
-status: "review"
-related_nodes: ["[[OpenStack-Overview]]", "[[Provider-vs-SelfService-Network]]", "[[DevStack-Flamingo-Python-Error]]"]
+status: "stable"
+related_nodes: ["[[OpenStack-Overview]]", "[[Provider-vs-SelfService-Network]]", "[[02_QnA_Archive/2026-05-15-devstack-flamingo-python-error]]"]
 author: "SU-Cloud Team (차지만 실습 기반)"
 ---
 
@@ -19,7 +19,7 @@ author: "SU-Cloud Team (차지만 실습 기반)"
 | `stable/2025.2` (Flamingo) | Python/Sphinx 버전 충돌 발생 | ❌ |
 | `stable/2023.1` (Antelope) | 안정적으로 설치 확인 | ✅ |
 
-Flamingo에서 발생하는 오류는 [[DevStack-Flamingo-Python-Error]] 참고.
+Flamingo에서 발생하는 오류는 [[02_QnA_Archive/2026-05-15-devstack-flamingo-python-error]] 참고.
 
 ## 환경 요구사항
 
@@ -105,6 +105,6 @@ openstack image list
 
 ## 관련 문서
 
-- [[DevStack-Flamingo-Python-Error]] — Flamingo 브랜치 오류 상세
+- [[02_QnA_Archive/2026-05-15-devstack-flamingo-python-error]] — Flamingo 브랜치 오류 상세
 - [[Provider-vs-SelfService-Network]] — 설치 후 네트워크 개념 학습
 - [[OpenStack-Overview]] — 전체 구조 이해

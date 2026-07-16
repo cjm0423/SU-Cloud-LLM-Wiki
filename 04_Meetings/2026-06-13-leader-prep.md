@@ -3,8 +3,8 @@ title: "SU Cloud 리더 사전 미팅"
 type: "meeting"
 date: 2026-06-13
 tags: ["#meeting", "#su-cloud", "#vision", "#career", "#architecture"]
-status: "review"
-related_nodes: ["[[2026-06-13-kickoff]]", "[[차지만]]", "[[SU Cloud 프로젝트 개요]]"]
+status: "stable"
+related_nodes: ["[[2026-06-13-kickoff]]", "[[차지만]]", "[[01_Concepts/SU-Cloud-Project-Overview]]"]
 participants: ["[[박준우]]", "[[차지만]]"]
 author: "SU-Cloud Archive"
 ---
@@ -63,5 +63,5 @@ SU Cloud를 단순 OpenStack 실습이 아닌, 실제 사용자와 운영 흐름
 ## 🔗 Related Notes
 
 - People: [[박준우]], [[차지만]], [[이민기]], [[백지원]], [[안현]], [[김재현]]
-- Topics: [[OpenStack-Overview]], [[SU Cloud 프로젝트 개요]]
+- Topics: [[OpenStack-Overview]], [[01_Concepts/SU-Cloud-Project-Overview]]
 - Next: [[2026-06-13-kickoff]]

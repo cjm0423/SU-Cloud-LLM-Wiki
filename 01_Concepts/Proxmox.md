@@ -53,12 +53,12 @@ VM1    VM2    VM3
 학생별 VM 접속
 ```
 
-- [[Tailscale]]로 외부에서 학교 장비에 안전하게 접근
+- [[03_Guides/Tailscale-Setup-Guide]]로 외부에서 학교 장비에 안전하게 접근
 - 공용 계정 및 접근 권한 정책은 별도 확인 필요
 
 ## 관련 개념
 
 - [[OpenStack-Overview]] — Proxmox 위에서 설치되는 클라우드 플랫폼
 - [[VXLAN]] — Compute Node 간 네트워크 (멀티 노드 확장 시)
-- [[Tailscale]] — 원격 접속 VPN
+- [[03_Guides/Tailscale-Setup-Guide]] — 원격 접속 VPN 설치
 - [[2026-06-13-kickoff]] — Proxmox 도입 결정 배경

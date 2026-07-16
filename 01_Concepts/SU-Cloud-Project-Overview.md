@@ -3,7 +3,7 @@ title: "SU Cloud 프로젝트 개요"
 type: "concept"
 date: 2026-06-18
 tags: ["#su-cloud", "#project", "#vision", "#architecture"]
-status: "review"
+status: "stable"
 related_nodes: ["[[OpenStack-Overview]]", "[[차지만]]", "[[박준우]]", "[[2026-06-13-kickoff]]", "[[04_Meetings/INDEX]]"]
 author: "SU-Cloud Team"
 ---
@@ -53,14 +53,18 @@ Phase 3 — Production-like 운영
 
 ## 기술 스택
 
-| 레이어 | 기술 |
-|--------|------|
-| 하이퍼바이저 | Proxmox VE 8.4 |
-| 클라우드 플랫폼 | OpenStack Antelope (2023.1) |
-| 네트워킹 | Neutron + Linux Bridge + VXLAN |
-| 원격 접속 | Tailscale |
-| 개발 실습 | DevStack |
-| 문서화 | LLM Wiki (이 저장소) |
+> ⚠️ 아래는 2026-06-18 작성 당시 기준. 이후 Kolla-Ansible 도입(2026-06-13 결정, [[06_Decisions/2026-06-13-decision-kolla-ansible-deployment]])과
+> OVN 전환(2026-06-21 결정, [[06_Decisions/2026-06-21-decision-ovn-networking]])으로 실제 프로덕션 스택이 바뀌었다.
+> 현재 기준은 [[01_Concepts/Kolla-Ansible]], [[01_Concepts/OVN-OVS-Architecture]] 참고.
+
+| 레이어 | 초기 계획 (본 문서 작성 시점) | 현재 (Kolla-Ansible 이후) |
+|--------|------------------------------|---------------------------|
+| 하이퍼바이저 | Proxmox VE 8.4 | Proxmox VE 8.4 (운영계), 베어메탈 Ubuntu (개발계) |
+| 클라우드 플랫폼 | OpenStack Antelope (2023.1, 수동 설치 실습) | OpenStack 2026.1 Gazpacho (Kolla-Ansible 22.0.0) |
+| 네트워킹 | Neutron + Linux Bridge + VXLAN | Neutron + OVN + Geneve |
+| 원격 접속 | Tailscale | Tailscale |
+| 개발 실습 | DevStack | DevStack (사전학습용 유지) |
+| 문서화 | LLM Wiki (이 저장소) | LLM Wiki (이 저장소) |
 
 ## 제약 사항 (현실적 한계)
 

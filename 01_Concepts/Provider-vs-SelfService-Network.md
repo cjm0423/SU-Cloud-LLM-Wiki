@@ -3,12 +3,16 @@ title: "Provider Network vs Self-Service Network"
 type: "concept"
 date: 2026-06-18
 tags: ["#openstack", "#networking", "#neutron"]
-status: "review"
+status: "stable"
 related_nodes: ["[[OpenStack-Overview]]", "[[Neutron]]", "[[VXLAN]]", "[[Floating-IP]]"]
 author: "SU-Cloud Team"
 ---
 
 # Provider Network vs Self-Service Network
+
+> ⚠️ 이 문서의 다이어그램·패킷 흐름은 **LinuxBridge + VXLAN** 시절(구형 수동 설치) 구조 기준이다.
+> 현재 SU Cloud(Kolla-Ansible)는 **OVN + Geneve**로 전환됐다 — 실제 흐름은 [[01_Concepts/OVN-Network-Flow]] 참고.
+> 여기서는 Provider/Self-Service의 **개념적 차이**(누가 만드는가, 격리 방식, IP 할당)는 백엔드와 무관하게 여전히 유효하다.
 
 ## 한 줄 정의
 

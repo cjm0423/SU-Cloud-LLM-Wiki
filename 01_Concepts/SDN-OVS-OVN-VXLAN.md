@@ -3,17 +3,20 @@ title: "SDN · LinuxBridge · OVS · OVN · VXLAN/Geneve — 개념 정리"
 type: "concept"
 date: 2026-06-21
 tags: ["#networking", "#ovn", "#ovs", "#sdn", "#vxlan"]
-status: "review"
-related_nodes: ["[[01_Concepts/VXLAN]]", "[[01_Concepts/OVN-OVS-Architecture]]", "[[01_Concepts/OVN-Network-Flow]]", "[[01_Concepts/Provider-vs-SelfService-Network]]"]
+status: "stable"
+related_nodes: ["[[01_Concepts/VXLAN]]", "[[01_Concepts/Linux-Bridge]]", "[[01_Concepts/OVN-OVS-Architecture]]", "[[01_Concepts/OVN-Network-Flow]]", "[[01_Concepts/Provider-vs-SelfService-Network]]"]
 author: "AI Assistant"
 raw_source: "[[00_Inbox/2026-06-21-sdn-ovs-ovn-vxlan-raw]]"
 ---
 
 # SDN · LinuxBridge · OVS · OVN · VXLAN/Geneve — 개념 정리
 
+> ℹ️ OVN/OVS 컴포넌트 상세(NB/SB DB, ovn-northd, 브리지 구조)는 [[01_Concepts/OVN-OVS-Architecture]]에 정리되어 있다.
+> 이 문서는 **SDN이라는 큰 틀에서 각 레이어가 왜 등장했는지**와 SU Cloud가 어떤 순서로 이 스택을 거쳐왔는지에 집중한다.
+
 ## 한 줄 정의
 
-OpenStack 네트워킹을 구성하는 소프트웨어 정의 네트워킹(SDN) 스택의 각 레이어 개념 정리.
+OpenStack 네트워킹을 구성하는 소프트웨어 정의 네트워킹(SDN) 스택이 LinuxBridge → OVS → OVN으로 진화해온 배경과 이유.
 
 ## 상세 설명
 
@@ -25,41 +28,15 @@ OpenStack 네트워킹을 구성하는 소프트웨어 정의 네트워킹(SDN) 
 
 ---
 
-### LinuxBridge
+### 왜 LinuxBridge → OVS → OVN 순으로 넘어갔나
 
-- Linux 커널 내장 L2 스위치 기능
-- 단순하고 안정적이나 기능이 제한적
-- OpenStack에서 VXLAN 기반 오버레이 구현 시 사용 (구형)
+| 단계 | 한계 | 다음 단계가 해결한 것 |
+|------|------|----------------------|
+| **LinuxBridge** (→ [[01_Concepts/Linux-Bridge]]) | 단순 L2 스위칭만 가능, 프로그래머블 제어 불가 | OVS가 OpenFlow 기반 flow 제어 도입 |
+| **OVS** (Open vSwitch) | flow table을 노드마다 직접 관리해야 해서, 노드가 늘수록 운영 복잡도 급증 | OVN이 논리 정의 → 물리 flow 자동 변환을 대신 처리 |
+| **OVN** (→ [[01_Concepts/OVN-OVS-Architecture]]) | (현재 SU Cloud가 사용하는 최종 단계) | — |
 
-```
-brq-<net-id>  ← 네트워크마다 별도 브리지
-  ├─ tap<port-id>  ← VM NIC
-  └─ vxlan-<vni>   ← 터널 인터페이스 (노드별 직접 연결)
-```
-
-**단점**: 노드 수가 늘면 `vxlan-N` 인터페이스가 선형으로 증가, 관리 복잡.
-
----
-
-### OVS (Open vSwitch)
-
-- 고기능 소프트웨어 스위치 엔진 (커널 모듈 + `ovs-vswitchd` 데몬)
-- OpenFlow flow table로 패킷 처리 규칙 프로그래밍 가능
-- VXLAN, Geneve, GRE 등 다양한 터널 지원
-- LinuxBridge보다 훨씬 강력하나 단독으로 쓰면 flow 관리가 복잡
-
----
-
-### OVN (Open Virtual Network)
-
-- OVS 위에 얹는 **논리 네트워크 오케스트레이션 레이어**
-- NB DB(Northbound)에 논리 스위치/라우터를 정의 → SB DB(Southbound)로 변환 → 각 노드 OVS에 flow 자동 프로그래밍
-- OVN = 두뇌(control plane), OVS = 손발(data plane)
-
-**OpenStack에서의 OVN 역할**:
-- Neutron이 OVN NB DB에 논리 네트워크 정의 작성
-- ovn-northd가 논리 → 물리 변환
-- 각 노드의 ovn-controller가 자기 담당 flow를 OVS에 주입
+OVN은 OVS 위에 얹는 논리 네트워크 오케스트레이션 레이어로, "OVN = 두뇌, OVS = 손발" 관계다 — 구성요소별 상세는 [[01_Concepts/OVN-OVS-Architecture]] 참고.
 
 ---
 
@@ -100,6 +77,7 @@ brq-<net-id>  ← 네트워크마다 별도 브리지
 ## 관련 개념
 
 - [[01_Concepts/VXLAN]]
+- [[01_Concepts/Linux-Bridge]]
 - [[01_Concepts/OVN-OVS-Architecture]]
 - [[01_Concepts/OVN-Network-Flow]]
 - [[01_Concepts/Kolla-Ansible]]
