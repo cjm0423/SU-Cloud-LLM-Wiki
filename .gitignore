@@ -1,0 +1,8 @@
+# Obsidian 개인 설정/캐시 (팀원마다 다르므로 커밋 제외)
+.obsidian/workspace*
+.obsidian/cache
+.obsidian/plugins/*/data.json
+
+# OS
+.DS_Store
+Thumbs.db
