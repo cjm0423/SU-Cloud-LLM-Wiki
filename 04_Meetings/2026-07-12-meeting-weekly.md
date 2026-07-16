@@ -4,7 +4,7 @@ type: "meeting"
 date: 2026-07-12
 tags: ["#meeting", "#su-cloud"]
 related_nodes: ["[[04_Meetings/2026-06-28-meeting-weekly]]", "[[04_Meetings/2026-07-15-meeting-wiki-setup]]", "[[01_Concepts/SU-Cloud-Project-Overview]]", "[[01_Concepts/Floating-IP]]"]
-participants: ["[[05_People/조충희 교수님]]", "[[05_People/차지만]]", "[[05_People/이민기]]", "[[05_People/박준우]]", "[[05_People/안현]]", "[[05_People/백지원]]", "[[05_People/김재현]]"]
+participants: ["[[05_People/차지만]]", "[[05_People/이민기]]", "[[05_People/박준우]]", "[[05_People/안현]]", "[[05_People/백지원]]", "[[05_People/김재현]]"]
 author: "AI Assistant"
 raw_source: "[[00_Inbox/2026-07-12-meeting-weekly-raw]]"
 ---
@@ -14,7 +14,7 @@ raw_source: "[[00_Inbox/2026-07-12-meeting-weekly-raw]]"
 ## 📋 Session Snapshot
 
 - 날짜: 2026-07-12
-- 참여자: [[05_People/조충희 교수님]], 전원
+- 참여자: [[05_People/차지만]], [[05_People/이민기]], [[05_People/박준우]], [[05_People/안현]], [[05_People/백지원]], [[05_People/김재현]] (조충희 교수님 불참)
 - 이전 회의: [[04_Meetings/2026-06-28-meeting-weekly]]
 - 다음 회의: [[04_Meetings/2026-07-15-meeting-wiki-setup]]
 
@@ -64,6 +64,6 @@ raw_source: "[[00_Inbox/2026-07-12-meeting-weekly-raw]]"
 
 ## 🔗 Related Notes
 
-- People: [[05_People/조충희 교수님]], [[05_People/차지만]], [[05_People/이민기]], [[05_People/박준우]], [[05_People/안현]], [[05_People/백지원]], [[05_People/김재현]]
+- People: [[05_People/차지만]], [[05_People/이민기]], [[05_People/박준우]], [[05_People/안현]], [[05_People/백지원]], [[05_People/김재현]]
 - Topics: [[01_Concepts/SU-Cloud-Project-Overview]], [[01_Concepts/Floating-IP]]
 - Next Meeting: [[04_Meetings/2026-07-15-meeting-wiki-setup]]
