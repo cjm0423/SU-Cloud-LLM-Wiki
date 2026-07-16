@@ -3,6 +3,7 @@ title: "DevStack 설치 가이드 (Ubuntu 22.04 + Antelope 2023.1)"
 type: "guide"
 date: 2026-06-18
 tags: ["#devstack", "#openstack", "#installation", "#antelope"]
+status: "review"
 related_nodes: ["[[OpenStack-Overview]]", "[[Provider-vs-SelfService-Network]]", "[[DevStack-Flamingo-Python-Error]]"]
 author: "SU-Cloud Team (차지만 실습 기반)"
 ---

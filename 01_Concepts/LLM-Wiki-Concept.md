@@ -3,6 +3,7 @@ title: "SU Cloud LLM Wiki — 지식 관리 시스템 개념"
 type: "concept"
 date: 2026-07-12
 tags: ["#wiki", "#knowledge-management", "#obsidian", "#okf"]
+status: "review"
 related_nodes: ["[[01_Concepts/SU-Cloud-Project-Overview]]"]
 author: "AI Assistant"
 raw_source: ["[[00_Inbox/2026-07-12-doc-automation-harness-raw]]", "[[00_Inbox/2026-06-14-doc-automation-raw]]", "[[00_Inbox/2026-07-12-doc-automation-existing-raw]]"]

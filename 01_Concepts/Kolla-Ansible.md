@@ -3,6 +3,7 @@ title: "Kolla-Ansible"
 type: "concept"
 date: 2026-06-21
 tags: ["#openstack", "#kolla-ansible", "#iac", "#docker"]
+status: "stable"
 related_nodes: ["[[01_Concepts/OpenStack-Overview]]", "[[03_Guides/Kolla-Ansible-Install-Guide]]", "[[02_QnA_Archive/2026-06-28-kolla-ansible-deploy-troubleshooting]]"]
 author: "AI Assistant"
 raw_source: "[[00_Inbox/2026-06-21-kolla-ansible-intro-raw]]"

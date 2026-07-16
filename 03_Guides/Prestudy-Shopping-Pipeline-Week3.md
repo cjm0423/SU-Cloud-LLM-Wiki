@@ -3,6 +3,7 @@ title: "사전학습 3주차 — 쇼핑몰 3-tier 파이프라인 Docker Compose
 type: "guide"
 date: 2026-05-25
 tags: ["#guide", "#prestudy", "#docker", "#kafka", "#pipeline"]
+status: "stable"
 related_nodes: ["[[01_Concepts/OpenStack-Overview]]", "[[03_Guides/DevStack-Installation-Guide]]", "[[03_Guides/Prestudy-4Week-Roadmap]]"]
 author: "AI Assistant"
 raw_source: "[[00_Inbox/2026-05-25-prestudy-shopping-pipeline-week3-raw]]"

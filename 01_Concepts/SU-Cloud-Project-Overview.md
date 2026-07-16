@@ -3,6 +3,7 @@ title: "SU Cloud 프로젝트 개요"
 type: "concept"
 date: 2026-06-18
 tags: ["#su-cloud", "#project", "#vision", "#architecture"]
+status: "review"
 related_nodes: ["[[OpenStack-Overview]]", "[[차지만]]", "[[박준우]]", "[[2026-06-13-kickoff]]", "[[04_Meetings/INDEX]]"]
 author: "SU-Cloud Team"
 ---

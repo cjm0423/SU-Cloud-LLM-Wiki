@@ -3,6 +3,7 @@ title: "VXLAN"
 type: "concept"
 date: 2026-06-18
 tags: ["#networking", "#vxlan", "#openstack", "#overlay-network"]
+status: "stable"
 related_nodes: ["[[Provider-vs-SelfService-Network]]", "[[Neutron]]", "[[Linux-Bridge]]"]
 author: "SU-Cloud Team"
 ---

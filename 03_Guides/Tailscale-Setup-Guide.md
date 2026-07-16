@@ -3,6 +3,7 @@ title: "Tailscale 설치 및 Proxmox 원격 접속 가이드"
 type: "guide"
 date: 2026-06-14
 tags: ["#guide", "#tailscale", "#proxmox", "#vpn"]
+status: "stable"
 related_nodes: ["[[01_Concepts/HA-Concepts]]", "[[01_Concepts/Proxmox]]", "[[03_Guides/Proxmox-Installation-Guide]]"]
 author: "AI Assistant"
 raw_source: ["[[00_Inbox/2026-06-14-tailscale-setup-raw]]", "[[00_Inbox/2026-06-14-tailscale-remote-raw]]"]

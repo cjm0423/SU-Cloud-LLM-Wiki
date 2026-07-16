@@ -3,6 +3,7 @@ title: "운영 PC 실습 환경 네트워크 구성 가이드"
 type: "guide"
 date: 2026-06-14
 tags: ["#guide", "#proxmox", "#networking", "#tailscale"]
+status: "stable"
 related_nodes: ["[[01_Concepts/Proxmox]]", "[[01_Concepts/HA-Concepts]]", "[[03_Guides/Tailscale-Setup-Guide]]", "[[03_Guides/Proxmox-Installation-Guide]]"]
 author: "AI Assistant"
 raw_source: "[[00_Inbox/2026-06-14-ops-pc-network-setup-raw]]"

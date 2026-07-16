@@ -3,6 +3,7 @@ title: "네트워크 경로 진단 — L2/L3 도구 레퍼런스"
 type: "concept"
 date: 2026-06-21
 tags: ["#networking", "#troubleshooting", "#vlan", "#traceroute"]
+status: "stable"
 related_nodes: ["[[01_Concepts/SU-Cloud-Campus-Network]]", "[[01_Concepts/VXLAN]]", "[[01_Concepts/SDN-OVS-OVN-VXLAN]]", "[[03_Guides/Campus-Network-Runbook]]"]
 author: "AI Assistant"
 raw_source: "[[00_Inbox/2026-06-21-network-path-diagnosis-raw]]"

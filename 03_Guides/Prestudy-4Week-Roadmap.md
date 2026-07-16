@@ -3,6 +3,7 @@ title: "OpenStack 4주 사전학습 로드맵 및 액션 플랜"
 type: "guide"
 date: 2026-05-11
 tags: ["#guide", "#prestudy", "#openstack"]
+status: "stable"
 related_nodes: ["[[01_Concepts/OpenStack-Overview]]", "[[03_Guides/DevStack-Installation-Guide]]", "[[02_QnA_Archive/2026-05-17-prestudy-feedback-1]]"]
 author: "AI Assistant"
 raw_source: "[[00_Inbox/2026-05-11-prestudy-4week-roadmap-raw]]"

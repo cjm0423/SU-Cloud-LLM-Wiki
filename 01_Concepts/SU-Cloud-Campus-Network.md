@@ -3,6 +3,7 @@ title: "SU Cloud 캠퍼스 네트워크 구조"
 type: "concept"
 date: 2026-07-04
 tags: ["#networking", "#campus", "#su-cloud", "#infra"]
+status: "stable"
 related_nodes: ["[[01_Concepts/SU-Cloud-Project-Overview]]", "[[01_Concepts/Proxmox]]", "[[01_Concepts/Floating-IP]]"]
 author: "AI Assistant"
 raw_source: ["[[00_Inbox/2026-06-28-campus-network-draft-raw]]", "[[00_Inbox/2026-07-04-campus-network-analysis-raw]]"]

@@ -3,6 +3,7 @@ title: "260621 주간 회의 — 네트워크 파악 & IaC 사전 준비"
 type: "meeting"
 date: 2026-06-21
 tags: ["#meeting", "#su-cloud"]
+status: "stable"
 related_nodes: ["[[04_Meetings/2026-06-13-kickoff]]", "[[04_Meetings/2026-06-28-meeting-weekly]]", "[[01_Concepts/VXLAN]]", "[[01_Concepts/Proxmox]]"]
 participants: ["[[05_People/차지만]]", "[[05_People/이민기]]", "[[05_People/박준우]]", "[[05_People/안현]]", "[[05_People/백지원]]", "[[05_People/김재현]]"]
 author: "AI Assistant"

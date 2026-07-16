@@ -3,6 +3,7 @@ title: "사전학습 제출 템플릿 및 1~3주차 제출 기록"
 type: "guide"
 date: 2026-05-11
 tags: ["#guide", "#prestudy", "#template"]
+status: "stable"
 related_nodes: ["[[03_Guides/Prestudy-4Week-Roadmap]]", "[[01_Concepts/OpenStack-Overview]]", "[[03_Guides/DevStack-Installation-Guide]]"]
 author: "AI Assistant"
 raw_source: "[[00_Inbox/2026-05-11-prestudy-submit-template-raw]]"

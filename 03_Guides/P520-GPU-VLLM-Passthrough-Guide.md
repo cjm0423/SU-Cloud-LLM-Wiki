@@ -3,6 +3,7 @@ title: "P520 RTX A5500 GPU 패스스루 → VLLM VM 가이드"
 type: "guide"
 date: 2026-06-28
 tags: ["#guide", "#gpu", "#proxmox", "#vllm", "#passthrough"]
+status: "stable"
 related_nodes: ["[[01_Concepts/Proxmox]]", "[[03_Guides/Tailscale-Setup-Guide]]"]
 author: "AI Assistant"
 raw_source: "[[00_Inbox/2026-06-28-p520-gpu-vllm-passthrough-raw]]"

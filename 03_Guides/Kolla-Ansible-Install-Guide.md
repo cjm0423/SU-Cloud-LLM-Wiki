@@ -3,6 +3,7 @@ title: "Kolla-Ansible 멀티노드 배포 가이드 (Ubuntu 24.04 + OpenStack 20
 type: "guide"
 date: 2026-06-21
 tags: ["#guide", "#kolla-ansible", "#openstack", "#ubuntu"]
+status: "stable"
 related_nodes: ["[[01_Concepts/Kolla-Ansible]]", "[[01_Concepts/OVN-OVS-Architecture]]", "[[02_QnA_Archive/2026-06-28-kolla-ansible-deploy-troubleshooting]]"]
 author: "AI Assistant"
 raw_source: ["[[00_Inbox/2026-06-21-kolla-install-roadmap-raw]]", "[[00_Inbox/2026-06-21-kolla-practice-guide-raw]]"]

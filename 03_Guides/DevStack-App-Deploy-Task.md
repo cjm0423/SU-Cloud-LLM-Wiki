@@ -3,6 +3,7 @@ title: "DevStack 이후 — OpenStack VM 위 앱 배포 과제 가이드"
 type: "guide"
 date: 2026-05-24
 tags: ["#guide", "#prestudy", "#devstack", "#docker", "#openstack"]
+status: "stable"
 related_nodes: ["[[03_Guides/DevStack-Installation-Guide]]", "[[01_Concepts/OpenStack-Overview]]", "[[01_Concepts/Floating-IP]]", "[[03_Guides/Prestudy-Shopping-Pipeline-Week3]]"]
 author: "AI Assistant"
 raw_source: "[[00_Inbox/2026-05-24-devstack-deploy-task-raw]]"

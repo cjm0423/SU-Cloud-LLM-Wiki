@@ -3,6 +3,7 @@ title: "SU Cloud 프로젝트 로드맵 (2026년 6월 ~ 12월)"
 type: "concept"
 date: 2026-06-01
 tags: ["#su-cloud", "#roadmap", "#project"]
+status: "stable"
 related_nodes: ["[[01_Concepts/SU-Cloud-Project-Overview]]", "[[01_Concepts/Kolla-Ansible]]", "[[04_Meetings/2026-06-13-kickoff]]"]
 author: "AI Assistant"
 raw_source: ["[[00_Inbox/2026-06-01-project-roadmap-raw]]", "[[00_Inbox/2026-06-01-project-roadmap-detail-raw]]"]

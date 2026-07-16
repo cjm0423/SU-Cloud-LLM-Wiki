@@ -3,6 +3,7 @@ title: "Floating IP"
 type: "concept"
 date: 2026-06-18
 tags: ["#openstack", "#networking", "#floating-ip"]
+status: "stable"
 related_nodes: ["[[Provider-vs-SelfService-Network]]", "[[Neutron]]", "[[Security-Group]]"]
 author: "SU-Cloud Team"
 ---

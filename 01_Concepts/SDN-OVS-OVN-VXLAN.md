@@ -3,6 +3,7 @@ title: "SDN · LinuxBridge · OVS · OVN · VXLAN/Geneve — 개념 정리"
 type: "concept"
 date: 2026-06-21
 tags: ["#networking", "#ovn", "#ovs", "#sdn", "#vxlan"]
+status: "review"
 related_nodes: ["[[01_Concepts/VXLAN]]", "[[01_Concepts/OVN-OVS-Architecture]]", "[[01_Concepts/OVN-Network-Flow]]", "[[01_Concepts/Provider-vs-SelfService-Network]]"]
 author: "AI Assistant"
 raw_source: "[[00_Inbox/2026-06-21-sdn-ovs-ovn-vxlan-raw]]"

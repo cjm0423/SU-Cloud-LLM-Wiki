@@ -3,6 +3,7 @@ title: "SU Cloud 리더 사전 미팅"
 type: "meeting"
 date: 2026-06-13
 tags: ["#meeting", "#su-cloud", "#vision", "#career", "#architecture"]
+status: "review"
 related_nodes: ["[[2026-06-13-kickoff]]", "[[차지만]]", "[[SU Cloud 프로젝트 개요]]"]
 participants: ["[[박준우]]", "[[차지만]]"]
 author: "SU-Cloud Archive"

@@ -3,6 +3,7 @@ title: "Proxmox"
 type: "concept"
 date: 2026-06-18
 tags: ["#proxmox", "#hypervisor", "#su-cloud", "#infrastructure"]
+status: "stable"
 related_nodes: ["[[OpenStack-Overview]]", "[[VXLAN]]", "[[2026-06-13-kickoff]]"]
 author: "SU-Cloud Team"
 ---

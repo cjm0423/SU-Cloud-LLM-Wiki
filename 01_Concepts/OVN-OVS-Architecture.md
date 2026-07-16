@@ -3,6 +3,7 @@ title: "OVN / OVS 아키텍처"
 type: "concept"
 date: 2026-06-28
 tags: ["#openstack", "#ovn", "#ovs", "#networking"]
+status: "stable"
 related_nodes: ["[[01_Concepts/OVN-Network-Flow]]", "[[01_Concepts/VXLAN]]", "[[01_Concepts/Provider-vs-SelfService-Network]]", "[[01_Concepts/Kolla-Ansible]]"]
 author: "AI Assistant"
 raw_source: ["[[00_Inbox/2026-06-28-ovn-ovs-final-raw]]", "[[00_Inbox/2026-06-28-ovn-diagram-raw]]"]

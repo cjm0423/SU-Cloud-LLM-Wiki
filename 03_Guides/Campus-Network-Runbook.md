@@ -3,6 +3,7 @@ title: "SU Cloud 학내망 경로 추적 Runbook"
 type: "guide"
 date: 2026-06-21
 tags: ["#guide", "#networking", "#campus-network", "#runbook"]
+status: "stable"
 related_nodes: ["[[01_Concepts/SU-Cloud-Campus-Network]]", "[[01_Concepts/Network-Path-Diagnosis]]", "[[02_QnA_Archive/2026-07-05-devpc-180-internet-outage-runbook]]"]
 author: "AI Assistant"
 raw_source: "[[00_Inbox/2026-06-21-campus-network-runbook-raw]]"

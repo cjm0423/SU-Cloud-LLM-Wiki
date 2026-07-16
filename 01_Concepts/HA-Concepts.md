@@ -3,6 +3,7 @@ title: "HA 고가용성 핵심 개념 — VPN·Galera·Quorum·VIP·HAProxy"
 type: "concept"
 date: 2026-06-21
 tags: ["#openstack", "#ha", "#networking", "#mariadb", "#haproxy"]
+status: "stable"
 related_nodes: ["[[01_Concepts/OpenStack-Overview]]", "[[01_Concepts/Kolla-Ansible]]", "[[04_Meetings/2026-06-28-meeting-weekly]]"]
 author: "AI Assistant"
 raw_source: "[[00_Inbox/2026-06-21-feedback-concepts-raw]]"

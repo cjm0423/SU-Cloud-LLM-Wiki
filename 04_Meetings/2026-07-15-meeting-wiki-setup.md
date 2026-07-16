@@ -3,6 +3,7 @@ title: "260715 위키 시스템 설계 회의 — 하네스 엔지니어링·Fro
 type: "meeting"
 date: 2026-07-15
 tags: ["#meeting", "#su-cloud", "#wiki"]
+status: "stable"
 related_nodes: ["[[04_Meetings/2026-07-12-meeting-weekly]]", "[[01_Concepts/SU-Cloud-Project-Overview]]"]
 participants: ["[[05_People/박준우]]", "[[05_People/차지만]]", "[[05_People/백지원]]", "[[05_People/이민기]]"]
 author: "AI Assistant"

@@ -3,6 +3,7 @@ title: "OVN 네트워크 흐름 — VM에서 인터넷까지"
 type: "concept"
 date: 2026-06-21
 tags: ["#openstack", "#ovn", "#networking", "#geneve"]
+status: "stable"
 related_nodes: ["[[01_Concepts/OVN-OVS-Architecture]]", "[[01_Concepts/VXLAN]]", "[[01_Concepts/Floating-IP]]", "[[01_Concepts/Kolla-Ansible]]"]
 author: "AI Assistant"
 raw_source: ["[[00_Inbox/2026-06-21-ovn-network-flow-raw]]", "[[00_Inbox/2026-06-21-ovn-flow-details-raw]]"]

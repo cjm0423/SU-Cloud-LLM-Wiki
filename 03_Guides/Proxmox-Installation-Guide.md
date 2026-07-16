@@ -3,6 +3,7 @@ title: "Proxmox 설치 가이드 (v8.4, 학교 서버)"
 type: "guide"
 date: 2026-06-15
 tags: ["#proxmox", "#installation", "#su-cloud", "#infrastructure"]
+status: "stable"
 related_nodes: ["[[Proxmox]]", "[[OpenStack-Overview]]", "[[2026-06-13-kickoff]]"]
 author: "SU-Cloud Team (2026-06-15 실습 기반)"
 ---

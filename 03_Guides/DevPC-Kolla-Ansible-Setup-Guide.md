@@ -3,6 +3,7 @@ title: "개발계 PC (Gaming5) Kolla-Ansible AIO 배포 가이드"
 type: "guide"
 date: 2026-07-05
 tags: ["#guide", "#kolla-ansible", "#devpc", "#openstack"]
+status: "stable"
 related_nodes: ["[[01_Concepts/Kolla-Ansible]]", "[[03_Guides/Kolla-Ansible-Install-Guide]]", "[[02_QnA_Archive/2026-07-05-devpc-180-network-failure-resolved]]", "[[03_Guides/Tailscale-Setup-Guide]]"]
 author: "AI Assistant"
 raw_source: "[[00_Inbox/2026-07-05-devpc-kolla-setup-raw]]"

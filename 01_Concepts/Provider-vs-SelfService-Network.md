@@ -3,6 +3,7 @@ title: "Provider Network vs Self-Service Network"
 type: "concept"
 date: 2026-06-18
 tags: ["#openstack", "#networking", "#neutron"]
+status: "review"
 related_nodes: ["[[OpenStack-Overview]]", "[[Neutron]]", "[[VXLAN]]", "[[Floating-IP]]"]
 author: "SU-Cloud Team"
 ---

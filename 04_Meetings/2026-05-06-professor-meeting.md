@@ -3,6 +3,7 @@ title: "OpenStack Pilot Project 교수님 회의"
 type: "meeting"
 date: 2026-05-06
 tags: ["#meeting", "#openstack", "#architecture", "#su-cloud"]
+status: "stable"
 related_nodes: ["[[2026-05-07-cha-jiman-1on1]]", "[[OpenStack-Overview]]", "[[조충희 교수님]]"]
 participants: ["[[박준우]]", "[[조충희 교수님]]", "[[안현]]"]
 author: "SU-Cloud Archive"

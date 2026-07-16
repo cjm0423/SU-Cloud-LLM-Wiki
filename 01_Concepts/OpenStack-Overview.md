@@ -3,6 +3,7 @@ title: "OpenStack 전체 구조 개요"
 type: "concept"
 date: 2026-06-18
 tags: ["#openstack", "#architecture", "#cloud-engineering"]
+status: "review"
 related_nodes: ["[[Provider-vs-SelfService-Network]]", "[[Neutron]]", "[[DevStack]]", "[[SU Cloud 프로젝트 개요]]"]
 author: "SU-Cloud Team"
 ---

@@ -3,6 +3,7 @@ title: "OpenStack 내부 아키텍처 — Nova·RabbitMQ·Neutron OVN·Ceph"
 type: "concept"
 date: 2026-05-25
 tags: ["#openstack", "#nova", "#rabbitmq", "#neutron", "#ceph"]
+status: "stable"
 related_nodes: ["[[01_Concepts/OpenStack-Overview]]", "[[01_Concepts/OVN-OVS-Architecture]]", "[[01_Concepts/VXLAN]]", "[[01_Concepts/HA-Concepts]]"]
 author: "AI Assistant"
 raw_source: "[[00_Inbox/2026-05-25-openstack-study-week3-raw]]"

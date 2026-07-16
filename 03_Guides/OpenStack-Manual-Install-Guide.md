@@ -3,6 +3,7 @@ title: "OpenStack 7-Node HA 수동 설치 가이드 (개요)"
 type: "guide"
 date: 2026-06-14
 tags: ["#guide", "#openstack", "#ha", "#manual-install"]
+status: "stable"
 related_nodes: ["[[01_Concepts/HA-Concepts]]", "[[01_Concepts/OpenStack-Overview]]", "[[03_Guides/Kolla-Ansible-Install-Guide]]", "[[03_Guides/Proxmox-Installation-Guide]]"]
 author: "AI Assistant"
 raw_source: "[[00_Inbox/2026-06-14-openstack-manual-install-raw]]"
