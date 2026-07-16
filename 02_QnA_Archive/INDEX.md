@@ -29,18 +29,31 @@ SORT date DESC
 
 ---
 
+## 미해결 목록 (Dataview)
+
+~~~
+```dataview
+TABLE date, title, file.link
+FROM "02_QnA_Archive"
+WHERE (type = "qa" OR type = "troubleshooting") AND status = "open"
+SORT date ASC
+```
+~~~
+
+---
+
 ## 수동 목록
 
-| 날짜 | 제목 | 태그 |
-|------|------|------|
-| 2026-05-15 | [[2026-05-15-devstack-flamingo-python-error]] | #devstack #troubleshooting |
-| 2026-05-17 | [[2026-05-17-prestudy-feedback-1]] | #prestudy #feedback |
-| 2026-05-24 | [[2026-05-24-prestudy-feedback-2]] | #prestudy #feedback |
-| 2026-06-13 | [[2026-06-13-openstack-pilot-server-spec]] | #openstack #infra |
-| 2026-06-28 | [[2026-06-28-kolla-ansible-deploy-troubleshooting]] | #kolla-ansible #troubleshooting |
-| 2026-07-05 | [[2026-07-05-devpc-180-internet-outage-runbook]] | #networking #campus-network |
-| 2026-07-05 | [[2026-07-05-devpc-180-network-failure-resolved]] | #networking #campus-network |
-| 2026-07-05 | [[2026-07-05-devpc-nginx-external-access]] | #networking #nginx |
+| 날짜 | 제목 | 태그 | 상태 |
+|------|------|------|------|
+| 2026-05-15 | [[2026-05-15-devstack-flamingo-python-error]] | #devstack #troubleshooting | resolved |
+| 2026-05-17 | [[2026-05-17-prestudy-feedback-1]] | #prestudy #feedback | resolved |
+| 2026-05-24 | [[2026-05-24-prestudy-feedback-2]] | #prestudy #feedback | resolved |
+| 2026-06-13 | [[2026-06-13-openstack-pilot-server-spec]] | #openstack #infra | resolved |
+| 2026-06-28 | [[2026-06-28-kolla-ansible-deploy-troubleshooting]] | #kolla-ansible #troubleshooting | resolved |
+| 2026-07-05 | [[2026-07-05-devpc-180-internet-outage-runbook]] | #networking #campus-network | resolved |
+| 2026-07-05 | [[2026-07-05-devpc-180-network-failure-resolved]] | #networking #campus-network | resolved |
+| 2026-07-05 | [[2026-07-05-devpc-nginx-external-access]] | #networking #nginx | resolved |
 
 ---
 
