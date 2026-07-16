@@ -3,6 +3,7 @@ title: "[회의 제목]"
 type: "meeting"
 date: YYYY-MM-DD
 tags: ["#meeting", "#su-cloud"]
+status: "draft"
 related_nodes: ["[[이전 회의]]", "[[관련 개념]]"]
 participants: ["[[참여자1]]", "[[참여자2]]"]
 author: "[작성자]"

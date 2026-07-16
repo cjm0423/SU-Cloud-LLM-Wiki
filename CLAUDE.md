@@ -13,8 +13,32 @@
 03_Guides/           처음부터 끝까지 따라 하면 되는 검증된 절차.
 04_Meetings/         회의 요약본.
 05_People/           참여자 허브 노드 (거의 손댈 일 없음).
-99_Templates/        OKF-Concept / OKF-QnA / OKF-Meeting / OKF-Raw 템플릿.
+06_Decisions/        기술 결정 기록 (왜 이 방향으로 갔는가).
+99_Templates/        OKF-Concept / OKF-QnA / OKF-Meeting / OKF-Raw / OKF-Decision 템플릿.
 ```
+
+## status 필드 스키마
+
+| 파일 위치 | status 값 | 의미 |
+|---|---|---|
+| `00_Inbox` | `raw` | 저장만 된 원본, 아직 위키로 추출 안 됨 |
+| `00_Inbox` | `promoted` | 위키 문서로 추출 완료 |
+| `01_Concepts`, `03_Guides`, `04_Meetings`, `06_Decisions` | `draft` | AI가 초안 생성, 사람 검토 전 |
+| `01_Concepts`, `03_Guides`, `04_Meetings`, `06_Decisions` | `review` | 검토 필요 표시 (내용 수정 필요하면 이 값으로) |
+| `01_Concepts`, `03_Guides`, `04_Meetings`, `06_Decisions` | `stable` | 사람이 검토 완료, 신뢰 가능 |
+| `02_QnA_Archive` | `open` | 아직 해결 안 됨 |
+| `02_QnA_Archive` | `resolved` | 문제 해결 완료 |
+| `02_QnA_Archive` | `wontfix` | 해결하지 않기로 결정 |
+
+**워크플로우:**
+```
+00_Inbox: raw → promoted
+위키 문서: draft → review → stable
+QnA: open → resolved
+```
+
+사람이 `status: "review"` 로 바꾸면 Dataview 쿼리가 "검토 필요 목록"에 자동으로 올라온다.
+에이전트가 만든 문서는 기본값 `draft`로 두고, 사람이 확인 후 `stable`로 바꾼다.
 
 ## 표준 작업: 미승격 원본 처리
 
@@ -31,6 +55,7 @@
 | 회의 내용 | `04_Meetings` |
 | 앞으로도 계속 유효할 개념 설명 | `01_Concepts` |
 | 처음부터 끝까지 따라할 수 있는 설치/절차 | `03_Guides` |
+| "왜 이 기술을 선택했는가" 결정 기록 | `06_Decisions` |
 
 판단이 애매하면 추측하지 말고 사람에게 물어본다.
 
