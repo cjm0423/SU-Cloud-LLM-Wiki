@@ -3,9 +3,9 @@ title: "openstack 네트워크 흐름 분석"
 type: "raw"
 date: 2026-06-14
 tags: ["#raw", "#inbox"]
-status: "raw"
+status: "promoted"
 source: "notion-export"
-promoted_to: ""
+promoted_to: "[[01_Concepts/Provider-vs-SelfService-Network]]"
 ---
 # openstack 네트워크 흐름 분석
 

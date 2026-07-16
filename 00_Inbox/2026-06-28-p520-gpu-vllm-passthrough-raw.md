@@ -3,9 +3,9 @@ title: "P520 GPU VLLM 패스스루 가이드"
 type: "raw"
 date: 2026-06-28
 tags: ["#raw", "#inbox"]
-status: "raw"
+status: "promoted"
 source: "notion-export"
-promoted_to: ""
+promoted_to: "[[03_Guides/P520-GPU-VLLM-Passthrough-Guide]]"
 ---
 # P520 GPU VLLM 패스스루 가이드
 

@@ -3,7 +3,7 @@ title: "SU-Cloud(오픈스택) 프로젝트 인덱스"
 type: "raw"
 date: 2026-06-01
 tags: ["#raw", "#inbox"]
-status: "raw"
+status: "promoted"
 source: "notion-export"
 promoted_to: ""
 ---

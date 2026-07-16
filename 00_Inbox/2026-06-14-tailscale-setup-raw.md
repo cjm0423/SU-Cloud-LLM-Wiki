@@ -3,9 +3,9 @@ title: "tailscale 구성 및 설정"
 type: "raw"
 date: 2026-06-14
 tags: ["#raw", "#inbox"]
-status: "raw"
+status: "promoted"
 source: "notion-export"
-promoted_to: ""
+promoted_to: "[[03_Guides/Tailscale-Setup-Guide]]"
 ---
 # tailscale 구성 및 설정
 

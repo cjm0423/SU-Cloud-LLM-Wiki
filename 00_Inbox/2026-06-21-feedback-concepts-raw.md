@@ -3,9 +3,9 @@ title: "피드백 개념 정리"
 type: "raw"
 date: 2026-06-21
 tags: ["#raw", "#inbox"]
-status: "raw"
+status: "promoted"
 source: "notion-export"
-promoted_to: ""
+promoted_to: "[[01_Concepts/HA-Concepts]]"
 ---
 # 피드백 개념 정리
 

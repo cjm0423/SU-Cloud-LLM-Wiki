@@ -3,9 +3,9 @@ title: "오픈스택 프로젝트 설명"
 type: "raw"
 date: 2026-06-01
 tags: ["#raw", "#inbox"]
-status: "raw"
+status: "promoted"
 source: "notion-export"
-promoted_to: ""
+promoted_to: "[[01_Concepts/SU-Cloud-Project-Overview]]"
 ---
 # 오픈스택 프로젝트 설명
 

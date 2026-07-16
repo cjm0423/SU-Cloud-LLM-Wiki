@@ -3,9 +3,9 @@ title: "SDN · LinuxBridge · OVS · OVN · VXLAN/Geneve"
 type: "raw"
 date: 2026-06-21
 tags: ["#raw", "#inbox"]
-status: "raw"
+status: "promoted"
 source: "notion-export"
-promoted_to: ""
+promoted_to: "[[01_Concepts/SDN-OVS-OVN-VXLAN]]"
 ---
 # SDN · LinuxBridge · OVS · OVN · VXLAN/Geneve
 

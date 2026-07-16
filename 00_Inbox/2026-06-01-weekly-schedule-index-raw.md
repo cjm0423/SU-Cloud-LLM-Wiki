@@ -3,7 +3,7 @@ title: "주간 세부 일정 계획 인덱스"
 type: "raw"
 date: 2026-06-01
 tags: ["#raw", "#inbox"]
-status: "raw"
+status: "promoted"
 source: "notion-export"
 promoted_to: ""
 ---

@@ -3,9 +3,9 @@ title: "개발계 외부 접속 확인 (NGINX)"
 type: "raw"
 date: 2026-07-05
 tags: ["#raw", "#inbox"]
-status: "raw"
+status: "promoted"
 source: "notion-export"
-promoted_to: ""
+promoted_to: "[[02_QnA_Archive/2026-07-05-devpc-nginx-external-access]]"
 ---
 # 개발계 외부 접속 확인(NGINX)
 

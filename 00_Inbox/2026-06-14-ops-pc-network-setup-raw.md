@@ -3,9 +3,9 @@ title: "운영pc 실습 환경 네트워크 구성 정리"
 type: "raw"
 date: 2026-06-14
 tags: ["#raw", "#inbox"]
-status: "raw"
+status: "promoted"
 source: "notion-export"
-promoted_to: ""
+promoted_to: "[[03_Guides/Ops-PC-Network-Setup-Guide]]"
 ---
 # 운영pc 실습 환경 네트워크 구성 정리
 

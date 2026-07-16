@@ -3,9 +3,9 @@ title: "260712 주간 회의"
 type: "raw"
 date: 2026-07-12
 tags: ["#raw", "#inbox"]
-status: "raw"
+status: "promoted"
 source: "notion-export"
-promoted_to: ""
+promoted_to: "[[04_Meetings/2026-07-12-meeting-weekly]]"
 ---
 # 260712
 

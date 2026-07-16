@@ -3,9 +3,9 @@ title: "OVN OVS 최종정리"
 type: "raw"
 date: 2026-06-28
 tags: ["#raw", "#inbox"]
-status: "raw"
+status: "promoted"
 source: "notion-export"
-promoted_to: ""
+promoted_to: "[[01_Concepts/OVN-OVS-Architecture]]"
 ---
 # OVN / OVS 최종정리
 

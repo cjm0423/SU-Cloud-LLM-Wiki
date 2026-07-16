@@ -3,9 +3,9 @@ title: "오픈스택(OpenStack) 클라우드 구축 학습"
 type: "raw"
 date: 2026-07-16
 tags: ["#raw", "#inbox"]
-status: "raw"
+status: "promoted"
 source: "notion-export"
-promoted_to: ""
+promoted_to: "[[01_Concepts/OpenStack-Overview]]"
 ---
 # 오픈스택(OpenStack) 클라우드 구축 학습
 

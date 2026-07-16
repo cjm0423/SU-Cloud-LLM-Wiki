@@ -3,9 +3,9 @@ title: "Devstack 실습 & Openstack 공부 - 2 week"
 type: "raw"
 date: 2026-05-18
 tags: ["#raw", "#inbox"]
-status: "raw"
+status: "promoted"
 source: "notion-export"
-promoted_to: ""
+promoted_to: "[[01_Concepts/OpenStack-Overview]]"
 ---
 # Devstack 실습 & Openstack 공부 - 2 week
 

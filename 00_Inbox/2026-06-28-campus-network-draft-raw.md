@@ -3,9 +3,9 @@ title: "SU Cloud — 캠퍼스 네트워크 구조 (초안)"
 type: "raw"
 date: 2026-06-28
 tags: ["#raw", "#inbox"]
-status: "raw"
+status: "promoted"
 source: "notion-export"
-promoted_to: ""
+promoted_to: "[[01_Concepts/SU-Cloud-Campus-Network]]"
 ---
 # SU Cloud — 캠퍼스 네트워크 구조 (초안)
 

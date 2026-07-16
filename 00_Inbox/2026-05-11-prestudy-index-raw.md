@@ -3,7 +3,7 @@ title: "사전학습 정리 인덱스"
 type: "raw"
 date: 2026-05-11
 tags: ["#raw", "#inbox"]
-status: "raw"
+status: "promoted"
 source: "notion-export"
 promoted_to: ""
 ---

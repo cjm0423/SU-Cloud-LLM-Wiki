@@ -3,9 +3,9 @@ title: "개발계 pc(gaming 5) Kolla-Ansible 구성"
 type: "raw"
 date: 2026-07-05
 tags: ["#raw", "#inbox"]
-status: "raw"
+status: "promoted"
 source: "notion-export"
-promoted_to: ""
+promoted_to: "[[03_Guides/DevPC-Kolla-Ansible-Setup-Guide]]"
 ---
 # 개발계 pc(gaming 5) Kolla-Ansible 구성
 

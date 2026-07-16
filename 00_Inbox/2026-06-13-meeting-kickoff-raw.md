@@ -3,9 +3,9 @@ title: "260613 킥오프 회의"
 type: "raw"
 date: 2026-06-13
 tags: ["#raw", "#inbox"]
-status: "raw"
+status: "promoted"
 source: "notion-export"
-promoted_to: ""
+promoted_to: "[[04_Meetings/2026-06-13-kickoff]]"
 ---
 # 260613 킥오프
 

@@ -3,9 +3,9 @@ title: "사전학습 2주차 (DevStack 환경 구성)"
 type: "raw"
 date: 2026-05-18
 tags: ["#raw", "#inbox"]
-status: "raw"
+status: "promoted"
 source: "notion-export"
-promoted_to: ""
+promoted_to: "[[03_Guides/DevStack-Installation-Guide]]"
 ---
 # 2주차(DevStack 환경 구성)
 

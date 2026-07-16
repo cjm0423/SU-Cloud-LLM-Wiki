@@ -3,9 +3,9 @@ title: "문서 자동화 - 하네스 엔지니어링"
 type: "raw"
 date: 2026-07-12
 tags: ["#raw", "#inbox"]
-status: "raw"
+status: "promoted"
 source: "notion-export"
-promoted_to: ""
+promoted_to: "[[01_Concepts/LLM-Wiki-Concept]]"
 ---
 # 문서 자동화 - 하네스 엔지니어링
 

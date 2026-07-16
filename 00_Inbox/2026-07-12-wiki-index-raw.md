@@ -3,7 +3,7 @@ title: "위키 인덱스"
 type: "raw"
 date: 2026-07-12
 tags: ["#raw", "#inbox"]
-status: "raw"
+status: "promoted"
 source: "notion-export"
 promoted_to: ""
 ---

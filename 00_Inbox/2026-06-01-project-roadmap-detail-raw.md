@@ -3,9 +3,9 @@ title: "SU-Cloud 2026 로드맵 상세"
 type: "raw"
 date: 2026-06-01
 tags: ["#raw", "#inbox"]
-status: "raw"
+status: "promoted"
 source: "notion-export"
-promoted_to: ""
+promoted_to: "[[01_Concepts/SU-Cloud-Project-Roadmap]]"
 ---
 # SU-Cloud 2026 · 로드맵
 

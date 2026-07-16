@@ -3,7 +3,7 @@ title: "전북대 openstack 정리 인덱스"
 type: "raw"
 date: 2026-07-16
 tags: ["#raw", "#inbox"]
-status: "raw"
+status: "promoted"
 source: "notion-export"
 promoted_to: ""
 ---

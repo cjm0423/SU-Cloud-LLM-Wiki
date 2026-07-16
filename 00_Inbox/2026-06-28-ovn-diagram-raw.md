@@ -3,9 +3,9 @@ title: "OVN 다이어그램"
 type: "raw"
 date: 2026-06-28
 tags: ["#raw", "#inbox"]
-status: "raw"
+status: "promoted"
 source: "notion-export"
-promoted_to: ""
+promoted_to: "[[01_Concepts/OVN-OVS-Architecture]]"
 ---
 # OVN 다이어그램
 

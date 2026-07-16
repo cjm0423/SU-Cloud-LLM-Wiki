@@ -3,7 +3,7 @@ title: "6월 4주차 진행사항 인덱스"
 type: "raw"
 date: 2026-06-21
 tags: ["#raw", "#inbox"]
-status: "raw"
+status: "promoted"
 source: "notion-export"
 promoted_to: ""
 ---

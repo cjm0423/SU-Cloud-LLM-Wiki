@@ -3,9 +3,9 @@ title: "0704 학교망 네트워크 구조 파악"
 type: "raw"
 date: 2026-07-04
 tags: ["#raw", "#inbox"]
-status: "raw"
+status: "promoted"
 source: "notion-export"
-promoted_to: ""
+promoted_to: "[[01_Concepts/SU-Cloud-Campus-Network]]"
 ---
 # 0704 학교망 네트워크 구조 파악
 

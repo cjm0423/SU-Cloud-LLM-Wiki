@@ -3,9 +3,9 @@ title: "260715 위키 회의"
 type: "raw"
 date: 2026-07-15
 tags: ["#raw", "#inbox"]
-status: "raw"
+status: "promoted"
 source: "notion-export"
-promoted_to: ""
+promoted_to: "[[04_Meetings/2026-07-15-meeting-wiki-setup]]"
 ---
 # 260715
 

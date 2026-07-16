@@ -3,9 +3,9 @@ title: "OpenStack 파일럿"
 type: "raw"
 date: 2026-06-13
 tags: ["#raw", "#inbox"]
-status: "raw"
+status: "promoted"
 source: "notion-export"
-promoted_to: ""
+promoted_to: "[[02_QnA_Archive/2026-06-13-openstack-pilot-server-spec]]"
 ---
 # OpenStack 파일럿
 

@@ -3,9 +3,9 @@ title: "Kolla Ansible 설치 로드맵 (Ubuntu 24.04)"
 type: "raw"
 date: 2026-06-21
 tags: ["#raw", "#inbox"]
-status: "raw"
+status: "promoted"
 source: "notion-export"
-promoted_to: ""
+promoted_to: "[[03_Guides/Kolla-Ansible-Install-Guide]]"
 ---
 # Kolla Ansible 설치 로드맵 (Ubuntu 24.04)
 

@@ -3,7 +3,7 @@ title: "회의록 인덱스"
 type: "raw"
 date: 2026-06-13
 tags: ["#raw", "#inbox"]
-status: "raw"
+status: "promoted"
 source: "notion-export"
 promoted_to: ""
 ---

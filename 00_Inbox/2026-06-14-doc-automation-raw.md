@@ -3,9 +3,9 @@ title: "문서 자동화 정리"
 type: "raw"
 date: 2026-06-14
 tags: ["#raw", "#inbox"]
-status: "raw"
+status: "promoted"
 source: "notion-export"
-promoted_to: ""
+promoted_to: "[[01_Concepts/LLM-Wiki-Concept]]"
 ---
 # 문서 자동화 정리
 

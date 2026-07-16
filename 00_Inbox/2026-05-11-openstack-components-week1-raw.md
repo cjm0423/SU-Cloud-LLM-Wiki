@@ -3,9 +3,9 @@ title: "OpenStack & Components - 1 week"
 type: "raw"
 date: 2026-05-11
 tags: ["#raw", "#inbox"]
-status: "raw"
+status: "promoted"
 source: "notion-export"
-promoted_to: ""
+promoted_to: "[[01_Concepts/OpenStack-Overview]]"
 ---
 # OpenStack & Components - 1 week
 

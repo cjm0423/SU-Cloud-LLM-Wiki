@@ -3,9 +3,9 @@ title: "Kolla-Ansible 실습 해설"
 type: "raw"
 date: 2026-06-21
 tags: ["#raw", "#inbox"]
-status: "raw"
+status: "promoted"
 source: "notion-export"
-promoted_to: ""
+promoted_to: "[[03_Guides/Kolla-Ansible-Install-Guide]]"
 ---
 # Kolla-Ansible 실습 해설
 

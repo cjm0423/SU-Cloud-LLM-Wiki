@@ -3,9 +3,9 @@ title: "OVN 네트워크 흐름 확인 (Kolla Ansible)"
 type: "raw"
 date: 2026-06-21
 tags: ["#raw", "#inbox"]
-status: "raw"
+status: "promoted"
 source: "notion-export"
-promoted_to: ""
+promoted_to: "[[01_Concepts/OVN-Network-Flow]]"
 ---
 # OVN 네트워크 흐름 확인 (Kolla Ansible)
 

@@ -3,9 +3,9 @@ title: "개발계(180) 네트워크 장애 — 원인 확정 및 조치 기록"
 type: "raw"
 date: 2026-07-05
 tags: ["#raw", "#inbox"]
-status: "raw"
+status: "promoted"
 source: "notion-export"
-promoted_to: ""
+promoted_to: "[[02_QnA_Archive/2026-07-05-devpc-180-network-failure-resolved]]"
 ---
 # 개발계(.180) 네트워크 장애 — 원인 확정 및 조치 기록
 

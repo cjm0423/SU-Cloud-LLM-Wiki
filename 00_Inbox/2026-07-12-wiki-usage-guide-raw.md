@@ -3,9 +3,9 @@ title: "SU-Cloud-LLM-Wiki 사용가이드"
 type: "raw"
 date: 2026-07-12
 tags: ["#raw", "#inbox"]
-status: "raw"
+status: "promoted"
 source: "notion-export"
-promoted_to: ""
+promoted_to: "[[03_Guides/LLM-Wiki-Usage-Guide]]"
 ---
 # SU-Cloud-LLM-Wiki 사용가이드
 
