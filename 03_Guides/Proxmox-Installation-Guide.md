@@ -27,16 +27,29 @@ https://www.proxmox.com/en/downloads/proxmox-virtual-environment
 → Proxmox VE 8.4 ISO 선택
 ```
 
+## 부팅 USB 준비
+
+Windows에서는 [Rufus](https://rufus.ie/ko/) 사용:
+1. Rufus 실행 → ISO 이미지 선택 → 시작
+2. ISO 모드(DD 아님)로 쓰기
+
+Linux에서는 `dd`:
+```bash
+dd if=proxmox-ve_8.4.iso of=/dev/sdX bs=4M status=progress
+```
+
 ## 설치 절차
 
-1. ISO를 USB에 굽기 (Rufus 또는 dd 사용)
-2. 서버 BIOS에서 USB 부팅 우선순위 설정
-3. Proxmox 설치 마법사 진행
-   - Target Disk: 설치할 디스크 선택
-   - Country: Korea
-   - Timezone: Asia/Seoul
+1. USB로 부팅 (BIOS/UEFI에서 Boot Priority → USB 최우선)
+   - 진입키: `Del`, `F2`, `F8` (메인보드마다 다름)
+2. Proxmox 설치 마법사 진행
+   - **Target Disk**: 설치할 디스크 선택
+     - 단일 디스크 → **ext4** 권장
+     - 여러 디스크 → **ZFS** (RAID 기능)
+   - Country: Korea, Timezone: Asia/Seoul
    - Admin Email + root 비밀번호 설정
    - Network: 서버 IP, Gateway, DNS 입력
+3. 설치 완료 후 터미널에 표시된 IP로 웹 접속
 
 ## 설치 후 접속
 

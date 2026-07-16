@@ -3,9 +3,9 @@ title: "사전학습 3주차 (쇼핑 파이프라인 - 데이터 분석 course)"
 type: "raw"
 date: 2026-05-25
 tags: ["#raw", "#inbox"]
-status: "raw"
+status: "promoted"
 source: "notion-export"
-promoted_to: ""
+promoted_to: "[[03_Guides/Prestudy-Shopping-Pipeline-Week3]]"
 ---
 # 3주차(쇼핑 파이프라인 - 데이터 분석 course)
 

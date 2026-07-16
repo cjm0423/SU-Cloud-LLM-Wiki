@@ -3,7 +3,7 @@ title: "[4주차] 6월 22일(월) ~ 6월 28일(일) 일정"
 type: "raw"
 date: 2026-06-22
 tags: ["#raw", "#inbox"]
-status: "raw"
+status: "promoted"
 source: "notion-export"
 promoted_to: ""
 ---

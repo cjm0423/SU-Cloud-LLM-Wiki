@@ -3,9 +3,9 @@ title: "SU Cloud — 학내망 경로 추적 Runbook"
 type: "raw"
 date: 2026-06-21
 tags: ["#raw", "#inbox"]
-status: "raw"
+status: "promoted"
 source: "notion-export"
-promoted_to: ""
+promoted_to: "[[03_Guides/Campus-Network-Runbook]]"
 ---
 # SU Cloud — 학내망 경로 추적 Runbook
 

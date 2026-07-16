@@ -3,9 +3,9 @@ title: "오픈스택 수동설치 구성"
 type: "raw"
 date: 2026-06-14
 tags: ["#raw", "#inbox"]
-status: "raw"
+status: "promoted"
 source: "notion-export"
-promoted_to: ""
+promoted_to: "[[03_Guides/OpenStack-Manual-Install-Guide]]"
 ---
 # 오픈스택 수동설치 구성
 

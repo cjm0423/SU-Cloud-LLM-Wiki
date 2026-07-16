@@ -3,9 +3,9 @@ title: "DevStack 이후 앱 배포 과제 계획 및 공지"
 type: "raw"
 date: 2026-05-24
 tags: ["#raw", "#inbox"]
-status: "raw"
+status: "promoted"
 source: "notion-export"
-promoted_to: ""
+promoted_to: "[[03_Guides/DevStack-App-Deploy-Task]]"
 ---
 # 🚀 DevStack 이후 앱 배포 과제 계획 및 공지
 

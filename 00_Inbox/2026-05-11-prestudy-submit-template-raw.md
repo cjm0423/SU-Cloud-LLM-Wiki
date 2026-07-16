@@ -3,9 +3,9 @@ title: "사전학습 제출 템플릿"
 type: "raw"
 date: 2026-05-11
 tags: ["#raw", "#inbox"]
-status: "raw"
+status: "promoted"
 source: "notion-export"
-promoted_to: ""
+promoted_to: "[[03_Guides/Prestudy-Submit-Template]]"
 ---
 # 제출 템플릿
 

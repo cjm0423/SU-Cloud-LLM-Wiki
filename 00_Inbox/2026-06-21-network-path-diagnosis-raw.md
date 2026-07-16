@@ -3,9 +3,9 @@ title: "네트워크 경로 진단 — 명령어 & 개념 정리"
 type: "raw"
 date: 2026-06-21
 tags: ["#raw", "#inbox"]
-status: "raw"
+status: "promoted"
 source: "notion-export"
-promoted_to: ""
+promoted_to: "[[01_Concepts/Network-Path-Diagnosis]]"
 ---
 # 네트워크 경로 진단 — 명령어 & 개념 정리
 

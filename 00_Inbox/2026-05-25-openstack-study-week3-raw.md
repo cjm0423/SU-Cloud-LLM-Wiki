@@ -3,9 +3,9 @@ title: "Openstack 공부2 - 3 week"
 type: "raw"
 date: 2026-05-25
 tags: ["#raw", "#inbox"]
-status: "raw"
+status: "promoted"
 source: "notion-export"
-promoted_to: ""
+promoted_to: "[[01_Concepts/OpenStack-Internal-Architecture]]"
 ---
 # Openstack 공부2 - 3 week
 
