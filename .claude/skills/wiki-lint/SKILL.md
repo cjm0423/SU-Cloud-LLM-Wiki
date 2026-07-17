@@ -32,6 +32,16 @@ allowed-tools:
 
 존재하지 않으면 🔴 **깨진 링크**로 보고 (어느 파일의 몇 번째 줄인지 포함).
 
+**알려진 함정 (오탐 제거 필수):**
+- 코드 펜스(```) 안의 bash `[[ -n "$VAR" ]]` 같은 조건문은 wikilink가
+  아니다 — 코드 블록 내부는 건너뛴다.
+- 백틱 인라인 코드(`` `[[wikilink]]` ``, `` `[[문서명]]` `` 등)로 문법을
+  설명하는 예시 텍스트도 wikilink가 아니다 — 인라인 코드 스팬 안의 `[[...]]`도
+  건너뛴다.
+- DevStack `local.conf`처럼 `[[local|localrc]]` 같은 INI 섹션 헤더 문법이
+  우연히 wikilink 파이프 문법과 겹치는 경우가 있다(`03_Guides/DevStack-Installation-Guide.md`
+  실사례). 코드 블록 제외 규칙으로 자연히 걸러진다.
+
 ### 2. INDEX.md 수동 목록 ↔ 실제 파일 불일치
 
 `01_Concepts`, `02_QnA_Archive`, `03_Guides`, `04_Meetings`, `06_Decisions`
