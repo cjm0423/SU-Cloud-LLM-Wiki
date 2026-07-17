@@ -37,7 +37,7 @@ SU-Cloud-LLM-Wiki/
 ├── 04_Meetings/        # 회의 아카이브 (inbox에서 승격된 요약본)
 ├── 05_People/          # 참여자 허브 노드
 ├── 06_Decisions/       # 기술 결정 기록 (왜 이 방향으로 결정했는가)
-├── 99_Templates/       # Obsidian 템플릿 (Concept / QnA / Meeting / Raw / Decision)
+├── 99_Templates/       # Obsidian 템플릿 (Concept / QnA / Meeting / Guide / Person / Raw / Decision)
 └── README.md           # 이 파일
 ```
 
@@ -68,9 +68,30 @@ frontmatter의 `status`를 `raw` → `promoted`로만 바꿔둡니다.
 
 ---
 
-## LLM Wiki 에이전트 시스템 프롬프트
+## Claude Code 하네스 (권장)
 
-AI와 대화 시작 전 이 프롬프트를 붙여두면, 대화가 끝난 뒤 바로 OKF 위키 문서로 변환해 줍니다.
+이 저장소는 [Claude Code](https://claude.com/product/claude-code)로 열면
+`CLAUDE.md`를 자동으로 읽고, 아래 3가지 요청을 알아서 처리합니다. 별도
+프롬프트를 붙여넣을 필요 없이 자연어로 요청하면 됩니다:
+
+| 이렇게 말하면 | 무슨 일이 일어나나 |
+|---|---|
+| "inbox 처리해줘" / "위키로 추출해줘" | `00_Inbox`의 raw 원본을 찾아 정식 위키 문서로 추출·분류·연결하고, 원본 status를 `promoted`로 갱신, 커밋까지 |
+| "status 검토해줘" / "draft 승인해줘" | draft/review 상태 문서의 **전체 본문**을 보여주고 stable 승격 여부를 확인받음 |
+| "위키 점검해줘" / "정합성 체크해줘" | 깨진 wikilink, INDEX.md 불일치, status 값 오류, 누락된 메타데이터를 스캔해서 보고 |
+
+상세 절차는 각각 `.claude/skills/promote-inbox/`, `.claude/skills/review-status/`,
+`.claude/skills/wiki-lint/`의 `SKILL.md`에 있습니다. commit은 자동으로
+하되 **push는 항상 사람이 확인하고 명시적으로 요청했을 때만** 합니다.
+
+---
+
+## (Claude Code 없이) 범용 AI 챗 시스템 프롬프트
+
+Claude Code 대신 ChatGPT/Gemini 같은 일반 챗 UI를 쓴다면, 대화 시작 전 이
+프롬프트를 붙여두면 대화가 끝난 뒤 OKF 위키 문서로 변환해 줍니다. (단,
+`CLAUDE.md`의 세부 규칙이나 위 스킬들의 자동화는 적용되지 않으니 결과물을
+직접 검토해서 커밋해야 합니다.)
 
 ```
 [Role]
