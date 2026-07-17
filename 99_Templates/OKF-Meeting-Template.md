@@ -6,8 +6,11 @@ tags: ["#meeting", "#su-cloud"]
 status: "draft"
 related_nodes: ["[[이전 회의]]", "[[관련 개념]]"]
 participants: ["[[참여자1]]", "[[참여자2]]"]
-author: "[작성자]"
+author: "AI Assistant & [작성자 이름]"
 raw_source: "[[00_Inbox/원본 파일명]]"
+reviewed_by: ""
+reviewed_date: ""
+# stable로 승격할 때만 채운다. reviewed_by는 "[[05_People/이름]]" 형식.
 ---
 
 # [회의 제목]

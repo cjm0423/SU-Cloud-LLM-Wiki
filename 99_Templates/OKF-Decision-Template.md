@@ -6,7 +6,7 @@ tags: ["#decision", "#su-cloud"]
 status: "stable"
 related_nodes: ["[[관련 회의]]", "[[관련 개념]]"]
 deciders: ["[[05_People/차지만]]"]
-author: "[작성자]"
+author: "AI Assistant & [작성자 이름]"
 ---
 
 # [결정 제목]

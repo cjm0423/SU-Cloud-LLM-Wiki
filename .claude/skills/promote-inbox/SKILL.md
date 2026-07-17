@@ -34,7 +34,7 @@ AskUserQuestion으로 사람에게 물어본다.
 | 특정 에러/문제 하나를 해결한 것 | `02_QnA_Archive` | `99_Templates/OKF-QnA-Template.md` |
 | 회의 내용 | `04_Meetings` | `99_Templates/OKF-Meeting-Template.md` |
 | 앞으로도 계속 유효할 개념 설명 | `01_Concepts` | `99_Templates/OKF-Concept-Template.md` |
-| 처음부터 끝까지 따라할 수 있는 설치/절차 | `03_Guides` | (Concept 템플릿 구조를 절차형으로 변형) |
+| 처음부터 끝까지 따라할 수 있는 설치/절차 | `03_Guides` | `99_Templates/OKF-Guide-Template.md` |
 | "왜 이 기술을 선택했는가" 결정 기록 | `06_Decisions` | `99_Templates/OKF-Decision-Template.md` |
 
 ## 2. 관련 문서 찾기
@@ -54,12 +54,29 @@ AskUserQuestion으로 사람에게 물어본다.
     `status`는 기본 `draft`.
   - 공통: `related_nodes`는 실제 관련 문서만 `[[문서명]]` wikilink로.
     `raw_source: "[[00_Inbox/원본파일명]]"` 반드시 채운다 (Decision 템플릿엔
-    `raw_source` 필드가 없으니 추가하지 않는다).
+    `raw_source` 필드가 없으니 추가하지 않는다). 원본이 여러 개(예:
+    Guide가 여러 STT 세션을 통합한 경우)라면 `raw_source`를 배열
+    `["[[00_Inbox/A]]", "[[00_Inbox/B]]"]`로.
+  - `reviewed_by`/`reviewed_date`(Concept·Meeting·Guide 템플릿에 있음)는
+    생성 시점엔 빈 문자열로 둔다 — `stable` 승격은 `review-status` 스킬의
+    몫이다.
 - 파일명: `YYYY-MM-DD-keyword-english.md`. 날짜는 원본의 날짜(없으면 오늘
   날짜), 키워드는 영문 소문자+하이픈.
 - 원본 내용을 요약·재구성해서 쓰되, 원본에 없는 사실을 지어내지 않는다.
 
-## 4. 원본 상태 갱신
+## 4. 참여자 허브 노드 확인 (Meeting/Decision만)
+
+Meeting의 `participants` 또는 Decision의 `deciders`에 넣은 사람 중
+`05_People/<이름>.md`가 아직 없는 사람이 있으면:
+1. `99_Templates/OKF-Person-Template.md`로 `05_People/<이름>.md`를 생성한다
+   (title/date/tags만 채우면 됨 — Dataview LIST 쿼리는 템플릿 그대로 두되
+   `[[이름]]` placeholder를 실제 이름으로 바꾼다).
+2. `05_People/INDEX.md` 표에 한 줄 추가한다. 역할(`역할` 컬럼)은 원본에서
+   명확히 드러나지 않으면 지어내지 말고 `확인 필요`로 표시한다.
+
+이미 있는 사람은 건드리지 않는다.
+
+## 5. 원본 상태 갱신
 
 방금 처리한 `00_Inbox` 원본 파일의 frontmatter를 수정한다:
 - `status: "raw"` → `status: "promoted"`
@@ -67,18 +84,18 @@ AskUserQuestion으로 사람에게 물어본다.
 
 **원본 본문 내용 자체는 절대 수정·삭제하지 않는다.** frontmatter만 바꾼다.
 
-## 5. INDEX.md 갱신
+## 6. INDEX.md 갱신
 
 목적지 폴더 `INDEX.md`의 "수동 목록" 표에 새 문서 한 줄을 추가한다.
 Dataview 쿼리 블록은 건드리지 않는다 — 자동 갱신된다. 표 컬럼은 폴더마다
 다르므로(예: `01_Concepts`는 파일/제목/태그, `02_QnA_Archive`는
 날짜/제목/태그/상태) 기존 표의 컬럼 구성을 그대로 따라간다.
 
-## 6. 커밋
+## 7. 커밋
 
-한 세트(새 정식 문서 + 원본 status 변경 + INDEX.md 갱신)를 하나의 커밋으로
-묶는다. 커밋 전에 어떤 파일이 새로 생기고 어떤 파일이 바뀌는지 요약해서
-사람에게 보여준다.
+한 세트(새 정식 문서 + 원본 status 변경 + INDEX.md 갱신 + 새로 만든
+05_People 스텁이 있다면 그것까지)를 하나의 커밋으로 묶는다. 커밋 전에
+어떤 파일이 새로 생기고 어떤 파일이 바뀌는지 요약해서 사람에게 보여준다.
 
 커밋 메시지 형식: `docs: <새 문서 제목> 추가`
 

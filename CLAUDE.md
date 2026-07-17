@@ -14,7 +14,7 @@
 04_Meetings/         회의 요약본.
 05_People/           참여자 허브 노드 (거의 손댈 일 없음).
 06_Decisions/        기술 결정 기록 (왜 이 방향으로 갔는가).
-99_Templates/        OKF-Concept / OKF-QnA / OKF-Meeting / OKF-Raw / OKF-Decision 템플릿.
+99_Templates/        OKF-Concept / OKF-QnA / OKF-Meeting / OKF-Guide / OKF-Person / OKF-Raw / OKF-Decision 템플릿.
 ```
 
 ## status 필드 스키마
@@ -40,17 +40,25 @@ QnA: open → resolved
 사람이 `status: "review"` 로 바꾸면 Dataview 쿼리가 "검토 필요 목록"에 자동으로 올라온다.
 에이전트가 만든 문서는 기본값 `draft`로 두고, 사람이 확인 후 `stable`로 바꾼다.
 
+`stable`로 승격되는 Concept/Meeting/Guide 문서는 `reviewed_by`
+(검토자 — `[[05_People/이름]]` 형식) / `reviewed_date`(승격된 날짜)를
+같이 채운다. 생성 시점(`draft`)에는 빈 값으로 둔다.
+
 ## 표준 작업 (Skill로 위임)
 
-아래 두 작업은 상세 절차를 `.claude/skills/`의 Skill 파일로 분리해뒀다.
+아래 작업들은 상세 절차를 `.claude/skills/`의 Skill 파일로 분리해뒀다.
 관련 요청이 오면 해당 Skill을 읽고 그대로 따른다.
 
 - **"inbox 처리해줘" / "위키로 추출해줘"** →
   [`.claude/skills/promote-inbox/SKILL.md`](.claude/skills/promote-inbox/SKILL.md)
-  (00_Inbox의 raw 원본을 정식 위키 문서로 추출·분류·연결·커밋)
+  (00_Inbox의 raw 원본을 정식 위키 문서로 추출·분류·연결·커밋. 참여자
+  허브 노드(05_People) 자동 생성 포함)
 - **"status 검토해줘" / "draft 승인해줘"** →
   [`.claude/skills/review-status/SKILL.md`](.claude/skills/review-status/SKILL.md)
   (draft/review 문서 원문 전체를 보여주고 stable 승격 여부 확인)
+- **"위키 점검해줘" / "정합성 체크해줘"** →
+  [`.claude/skills/wiki-lint/SKILL.md`](.claude/skills/wiki-lint/SKILL.md)
+  (깨진 wikilink, INDEX.md 불일치, status 오류, 누락된 메타데이터 점검)
 
 ## 공통 원칙
 

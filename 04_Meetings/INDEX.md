@@ -24,6 +24,19 @@ SORT date ASC
 
 ---
 
+## 미완료 Action Items (Dataview)
+
+~~~
+```dataview
+TASK
+FROM "04_Meetings"
+WHERE !completed
+GROUP BY file.link
+```
+~~~
+
+---
+
 ## 수동 목록 (시간순)
 
 | 날짜 | 회의 | 참여자 |
