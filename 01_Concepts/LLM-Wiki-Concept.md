@@ -3,10 +3,12 @@ title: "SU Cloud LLM Wiki — 지식 관리 시스템 개념"
 type: "concept"
 date: 2026-07-12
 tags: ["#wiki", "#knowledge-management", "#obsidian", "#okf"]
-status: "stable"
-related_nodes: ["[[01_Concepts/SU-Cloud-Project-Overview]]"]
+status: "draft"
+related_nodes: ["[[01_Concepts/SU-Cloud-Project-Overview]]", "[[06_Decisions/2026-07-15-decision-llm-wiki-harness]]"]
 author: "AI Assistant"
 raw_source: ["[[00_Inbox/2026-07-12-doc-automation-harness-raw]]", "[[00_Inbox/2026-06-14-doc-automation-raw]]", "[[00_Inbox/2026-07-12-doc-automation-existing-raw]]"]
+reviewed_by: ""
+reviewed_date: ""
 ---
 
 # SU Cloud LLM Wiki — 지식 관리 시스템 개념
@@ -60,12 +62,14 @@ raw_source: ["[[00_Inbox/2026-07-12-doc-automation-harness-raw]]", "[[00_Inbox/2
 | `03_Guides` | 확정된 재현 가능한 절차 (처음부터 끝까지 따라할 수 있는 것) |
 | `04_Meetings` | 회의 아카이브 (inbox에서 승격된 요약본) |
 | `05_People` | 참여자 허브 노드 (그래프뷰 연결 전용, Dataview로 동적 목록) |
+| `06_Decisions` | 기술 결정 기록 — 갈림길에서 왜 이 방향을 택했는가 |
 | `99_Templates` | 새 문서 작성 시 쓰는 Obsidian 템플릿 |
 
 ```
 00_Inbox (원본)
     → 02_QnA_Archive / 04_Meetings (가공된 개별 기록)
         → 01_Concepts / 03_Guides (검증되어 안정화된 지식)
+        → 06_Decisions (갈림길에서의 판단 근거)
             → 05_People (연결 허브)
 ```
 
@@ -89,17 +93,32 @@ raw_source: ["[[00_Inbox/2026-07-12-doc-automation-harness-raw]]", "[[00_Inbox/2
 | OKF-Concept-Template | 개념 정리 | 한 줄 정의, 상세 설명, 활용, 관련 개념 |
 | OKF-QnA-Template | 트러블슈팅/질의응답 | 상황→분석→해결책→후속 통찰 |
 | OKF-Meeting-Template | 회의록 | 요약, 논의 내용, Action Items, 관련 노트 |
+| OKF-Guide-Template | 검증된 절차 | 개요, 사전 조건, Step별 절차, 주의사항 |
+| OKF-Decision-Template | 결정 기록 | 배경, 고려한 대안, 결정 근거, 트레이드오프, 재검토 조건 |
+| OKF-Person-Template | 참여자 허브 | title/tags + 참여 회의 Dataview 쿼리 |
 | OKF-Raw-Template | 원본 캡처 | 원본 내용 그대로 + 선택적 메모 |
 
 공통 규칙: 연관 개념은 반드시 `[[문서명]]` 양방향 링크로 표기 → Obsidian 그래프뷰에서 시각화.
+`stable`로 승격되는 Concept/Meeting/Guide 문서는 `reviewed_by`/`reviewed_date`도 같이 채워서
+누가 언제 검토했는지 남긴다.
 
 ---
 
 ### 하네스 엔지니어링 (Harness Engineering)
 
-- CLAUDE.md 파일에 에이전트 지시 사항을 미리 정의
-- 팀원이 "inbox 처리해줘"라고만 해도 AI가 알아서 분류·추출·커밋
-- 맥락을 다 부여하지 않아도 워크플로우를 타서 초안 자동 생성
+CLAUDE.md(및 다른 AI 도구용 AGENTS.md)에 에이전트 지시 사항을 미리 정의해두고,
+세부 절차는 `.claude/skills/`의 Skill 파일 3개로 분리해뒀다. 관련 요청이 오면
+해당 Skill을 읽고 그대로 따르는 구조라, CLAUDE.md 자체는 구조/스키마 참조용
+포인터 역할만 한다.
+
+| 요청 | Skill | 하는 일 |
+|---|---|---|
+| "inbox 처리해줘" | `promote-inbox` | `00_Inbox`의 raw 원본을 분류·추출·연결해 정식 문서로 커밋. 참여자가 `05_People`에 없으면 허브 노드도 자동 생성 |
+| "status 검토해줘" | `review-status` | draft/review 문서의 **전체 본문**을 보여주고 stable 승격 여부 확인. 승인 시 `reviewed_by`/`reviewed_date` 기록 |
+| "위키 점검해줘" | `wiki-lint` | 깨진 wikilink, INDEX.md 불일치, status 값 오류, 누락된 메타데이터를 스캔해서 보고 |
+
+맥락을 다 부여하지 않아도 워크플로우를 타서 초안이 자동 생성되고, 사람은
+검토·승인만 담당하는 구조.
 
 ---
 
@@ -119,6 +138,7 @@ raw_source: ["[[00_Inbox/2026-07-12-doc-automation-harness-raw]]", "[[00_Inbox/2
 ## 관련 개념
 
 - [[01_Concepts/SU-Cloud-Project-Overview]]
+- [[06_Decisions/2026-07-15-decision-llm-wiki-harness]] — 이 시스템을 채택한 결정 기록
 
 ## 참고 자료
 
