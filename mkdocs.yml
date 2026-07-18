@@ -1,0 +1,49 @@
+site_name: SU-Cloud LLM Wiki
+site_description: SU Cloud 프로젝트 지식 위키
+docs_dir: docs
+site_dir: site
+
+# docs/ 는 저장소 루트 콘텐츠(00_Inbox ~ 99_Templates)를 가리키는
+# NTFS 정션/하드링크 모음이다. 실제 파일은 그대로 저장소 루트에 있고,
+# git에는 docs/ 자체를 커밋하지 않는다 (scripts/setup-mkdocs.ps1 참고).
+#
+# 최상위 섹션 순서/제목은 여기서 지정하지 않고 docs/.pages
+# (scripts/setup-mkdocs.ps1가 생성)와 각 폴더의 .pages가 담당한다.
+# mkdocs.yml에 nav를 직접 쓰면 awesome-pages가 각 폴더 안의 개별
+# 문서를 자동으로 nav에 못 채워 넣는다 (mkdocs 코어가 먼저 nav를
+# 확정지어버리기 때문).
+
+theme:
+  name: material
+  language: ko
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: 다크 모드로 전환
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: 라이트 모드로 전환
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.top
+    - search.suggest
+    - content.code.copy
+
+markdown_extensions:
+  - tables
+  - fenced_code
+  - attr_list
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.superfences
+
+plugins:
+  - search
+  - awesome-pages
+  - roamlinks

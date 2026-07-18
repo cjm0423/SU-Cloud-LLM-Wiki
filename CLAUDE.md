@@ -59,6 +59,19 @@ QnA: open → resolved
 - **"위키 점검해줘" / "정합성 체크해줘"** →
   [`.claude/skills/wiki-lint/SKILL.md`](.claude/skills/wiki-lint/SKILL.md)
   (깨진 wikilink, INDEX.md 불일치, status 오류, 누락된 메타데이터 점검)
+- **"public에 반영해줘" / "public wiki 업데이트해줘"** →
+  [`.claude/skills/publish-to-public/SKILL.md`](.claude/skills/publish-to-public/SKILL.md)
+  (이 리포의 stable 문서를 sibling 리포 `SU-Cloud-Wiki-Public`의 공개
+  핸드북(mkdocs)으로 정규화·민감정보 제거해서 반영)
+
+## Public 핸드북과의 관계
+
+`00_Inbox`~`99_Templates`는 이 프로젝트의 **private 운영 리포**다.
+학생들이 학습·실습한 내용 중 공개 가능한 것은 별도 git 저장소
+`../SU-Cloud-Wiki-Public`(mkdocs 기반 공개 핸드북)으로 옮겨 배포한다.
+두 리포는 완전히 분리되어 있으며, private → public 반영은 항상
+`publish-to-public` Skill을 통해서만 한다(민감정보 제거 절차를 건너뛰지
+않기 위함).
 
 ## 공통 원칙
 

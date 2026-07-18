@@ -6,3 +6,11 @@
 # OS
 .DS_Store
 Thumbs.db
+
+# mkdocs 빌드 산출물 / 가상환경 / 정션-하드링크 폴더
+# (docs/는 scripts/setup-mkdocs.ps1로 재생성되는 저장소 루트에 대한
+#  정션 모음이라 git이 실제 폴더로 오인해 콘텐츠를 중복 추적하게 된다)
+docs/
+site/
+.venv/
+venv/
