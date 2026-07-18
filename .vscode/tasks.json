@@ -1,0 +1,58 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Serve Private (8000)",
+            "type": "shell",
+            "command": "powershell",
+            "args": ["-File", "scripts\\serve-private.ps1"],
+            "isBackground": true,
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated",
+                "group": "mkdocs"
+            },
+            "problemMatcher": {
+                "pattern": {
+                    "regexp": "^$"
+                },
+                "background": {
+                    "activeOnStart": true,
+                    "beginsPattern": "Building documentation",
+                    "endsPattern": "Serving on"
+                }
+            }
+        },
+        {
+            "label": "Serve Public (8001)",
+            "type": "shell",
+            "command": "powershell",
+            "args": ["-File", "scripts\\serve-public.ps1"],
+            "isBackground": true,
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated",
+                "group": "mkdocs"
+            },
+            "problemMatcher": {
+                "pattern": {
+                    "regexp": "^$"
+                },
+                "background": {
+                    "activeOnStart": true,
+                    "beginsPattern": "Building documentation",
+                    "endsPattern": "Serving on"
+                }
+            }
+        },
+        {
+            "label": "Serve Both",
+            "dependsOn": [
+                "Serve Private (8000)",
+                "Serve Public (8001)"
+            ],
+            "dependsOrder": "parallel",
+            "problemMatcher": []
+        }
+    ]
+}
