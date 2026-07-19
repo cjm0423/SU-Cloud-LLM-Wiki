@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Kolla Ansible 설치 로드맵 (Ubuntu 24.04)"
 type: "raw"
 date: 2026-06-21

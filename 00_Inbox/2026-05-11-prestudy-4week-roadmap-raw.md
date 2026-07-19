@@ -1,4 +1,4 @@
-﻿---
+---
 title: "OpenStack 4주 사전학습 로드맵 및 액션 플랜"
 type: "raw"
 date: 2026-05-11

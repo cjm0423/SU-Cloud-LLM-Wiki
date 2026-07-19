@@ -2,6 +2,7 @@ site_name: SU-Cloud LLM Wiki
 site_description: SU Cloud 프로젝트 지식 위키
 docs_dir: docs
 site_dir: site
+dev_addr: 127.0.0.1:8000
 
 # docs/ 는 저장소 루트 콘텐츠(00_Inbox ~ 99_Templates)를 가리키는
 # NTFS 정션/하드링크 모음이다. 실제 파일은 그대로 저장소 루트에 있고,
