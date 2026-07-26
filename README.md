@@ -101,3 +101,56 @@ powershell -File scripts\serve-private.ps1  # http://127.0.0.1:8000
 2. `CLAUDE.md`의 저장소 구조·status 스키마·태그 어휘를 프로젝트에 맞게 조정한다.
 3. `TAXONOMY.md`의 통제 어휘를 프로젝트 도메인에 맞게 갱신한다.
 4. 사람이 `00_Inbox`에 원본을 넣고, 에이전트에게 "inbox 처리해줘"라고 요청한다.
+
+---
+
+## 빠른 시작 (Quick Start)
+
+### 1. 뼈대 가져오기
+
+```bash
+git clone https://github.com/cjm0423/SU-Cloud-LLM-Wiki.git my-wiki
+cd my-wiki
+```
+
+clone하면 `00_Inbox/` 폴더가 이미 들어있다(안내는 `00_Inbox/INDEX.md` 참고).
+바로 여기에 원본을 넣으면 된다.
+
+### 2. 원본 넣고 → 에이전트에게 맡기기
+
+`00_Inbox/`에 가공하지 않은 원본을 저장한다. 파일명은 `YYYY-MM-DD-keyword-raw.md`.
+
+```
+00_Inbox/2026-01-01-example-raw.md   ← STT 전사·채팅 로그·회의 노트 등 그대로
+```
+
+그다음 Claude Code를 열고 자연어로 요청한다:
+
+| 요청 | 결과 |
+|---|---|
+| `inbox 처리해줘` | 원본을 정식 위키 문서로 추출·분류·연결·커밋 (폴더 자동 생성) |
+| `status 검토해줘` | draft 문서 본문을 보여주고 stable 승격 여부 확인 |
+| `위키 점검해줘` | 깨진 링크·정합성 스캔 |
+
+> Claude Code가 아닌 도구(Cursor 등)라면 `AGENTS.md`를 읽고
+> `.claude/skills/<이름>/SKILL.md`의 절차를 직접 따르면 된다.
+
+### 3. (선택) 로컬 뷰어로 열람
+
+문서가 몇 개 쌓인 뒤 mkdocs 뷰어로 본다.
+
+```powershell
+python -m venv .venv
+.venv\Scripts\python.exe -m pip install -r requirements.txt
+powershell -File scripts\setup-mkdocs.ps1     # docs/ 정션·하드링크 생성
+powershell -File scripts\serve-private.ps1    # http://127.0.0.1:8000
+```
+
+> ⚠️ `setup-mkdocs.ps1`는 콘텐츠 폴더(`00_Inbox`~`99_Templates`)를 정션으로
+> 연결하므로, **원본을 넣고 문서를 몇 개 추출한 뒤** 실행하는 것이 자연스럽다.
+
+### 매일 반복하는 루프
+
+```
+① 00_Inbox/ 에 원본 저장   →   ② "inbox 처리해줘"   →   ③ "status 검토해줘"   →   ④ 뷰어로 열람
+```
